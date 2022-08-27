@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Styling | W9 - Tables &amp; Forms</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/form-complete.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="masthead no-print" role="banner">
+      <div class="container">
+        <a href="/" class="logo">
+          <strong>W9 - Tables &amp; Forms</strong>
+        </a>
+        <nav id="nav" role="navigation">
+          <ul>
+            <li><a href="./table-basics.html">Table Basics</a></li>
+            <li><a href="./table-styling.html">Table Styling</a></li>
+            <li><a href="./form-basics.html">Form Basics</a></li>
+            <li>
+              <a aria-current="page" href="./form-styling-complete.html"
+                >Form Complete</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <section>
+        <div class="container container-side-padding">
+          <h1>Form Styling</h1>
+
+          <!-- ---------- TUTORIAL CONTENT ---------- -->
+
+          <form action="/thank-you.html">
+            <h2>Sign Up</h2>
+            <fieldset>
+              <legend>User Information</legend>
+
+              <div class="form-grid">
+                <div class="grid-unit">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+                <div class="grid-unit">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </div>
+                <div class="grid-unit">
+                  <label for="age">Age</label>
+                  <input type="number" id="age" name="age" min="0" value="18" />
+                </div>
+                <div class="grid-unit">
+                  <label for="experience">Experience</label>
+                  <input
+                    type="range"
+                    id="experience"
+                    name="experience"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+                <div class="grid-unit radio-grid m-1">
+                  <p class="label m-1">Marital Status</p>
+                  <div>
+                    <input type="radio" name="marital-status" id="single" />
+                    <label for="single">Single</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="marital-status"
+                      id="relationship"
+                    />
+                    <label for="relationship">Relationship</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marital-status" id="domestic" />
+                    <label for="domestic">Domestic Partnership</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="marital-status" id="married" />
+                    <label for="married">Married</label>
+                  </div>
+                </div>
+                <div class="grid-unit m-1">
+                  <label for="biography">Biography</label>
+                  <textarea id="biography" name="biography"></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Contact Information</legend>
+              <div class="form-grid">
+                <div class="form-unit">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-unit">
+                  <label for="tel">Phone Number</label>
+                  <input type="tel" id="tel" name="tel" required />
+                </div>
+
+                <div class="form-unit">
+                  <label for="address">Address</label>
+                  <input type="text" id="address" name="address" required />
+                </div>
+
+                <div class="form-unit">
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" required />
+                </div>
+
+                <div class="form-unit">
+                  <label for="province">Province</label>
+                  <input
+                    type="text"
+                    id="province"
+                    name="province"
+                    list="provinces"
+                    required
+                  />
+                  <datalist id="provinces">
+                    <option value="Alberta"></option>
+                    <option value="British Columbia"></option>
+                    <option value="Manitoba"></option>
+                    <option value="New Brunswick"></option>
+                    <option value="Newfoundland and Labrador"></option>
+                    <option value="Northwest Territories"></option>
+                    <option value="Nova Scotia"></option>
+                    <option value="Nunavut"></option>
+                    <option value="Ontario"></option>
+                    <option value="Prince Edward Island"></option>
+                    <option value="Quebec"></option>
+                    <option value="Saskatchewan"></option>
+                    <option value="Yukon"></option>
+                  </datalist>
+                </div>
+
+                <div class="form-unit">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <optgroup label="Asia">
+                      <option value="china">China</option>
+                      <option value="japan">Japan</option>
+                      <option value="philippines">Philippines</option>
+                      <option value="south-korea">South Korea</option>
+                    </optgroup>
+                    <optgroup label="North America">
+                      <option selected value="canada">Canada</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="united-states">United States</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                      <option value="france">France</option>
+                      <option value="germany">Germany</option>
+                      <option value="ireland">Ireland</option>
+                      <option value="spain">Spain</option>
+                      <option value="united-kingdom">United Kingdom</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Create Account</legend>
+              <div class="form-grid">
+                <div class="form-unit m-1">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" required />
+                </div>
+                <div class="form-unit">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="new-password"
+                    required
+                  />
+                </div>
+                <div class="form-unit">
+                  <label for="password-confirm">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="password-confirm"
+                    name="password-confirm"
+                    required
+                  />
+                </div>
+                <div class="form-unit m-1 checkbox-wrap">
+                  <input type="checkbox" id="permission" name="permission" />
+                  <label for="permission"
+                    >I grant permission to collect my data.</label
+                  >
+                </div>
+                <div class="form-unit m-1">
+                  <button class="btn" type="submit">Submit</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- ---------- END TUTORIAL CONTENT ---------- -->
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p>
+          <a
+            href="https://mad9013.github.io/F2021/modules/week9/"
+            target="_blank"
+            >Week 9 Content</a
+          >
+        </p>
+        <small
+          >Created for
+          <a href="https://mad9013.github.io/F2021/">MAD9013 course</a> and free
+          for any use.</small
+        >
+      </div>
+    </footer>
+    <div class="click-to-close"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

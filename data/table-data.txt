@@ -1,0 +1,118 @@
+////// NHL Atlantic Division
+
+//// Headers
+
+Team
+Pos
+GP
+W
+L
+OT
+PTS
+GF
+GA
+
+//// Teams
+
+// Boston
+
+Boston
+1
+70
+44
+14
+12
+100
+227
+174
+
+
+// Tampa Bay
+
+Tampa Bay
+2
+70
+43
+21
+6
+92
+245
+195
+
+
+// Toronto
+
+Toronto
+3
+70
+36
+25
+9
+81
+238
+227
+
+
+// Florida
+
+Florida
+4
+69
+35
+26
+8
+78
+231
+228
+
+
+// Montréal
+
+Montréal
+5
+71
+31
+31
+9
+71
+212
+221
+
+
+// Buffalo
+
+Buffalo
+6
+69
+30
+31
+8
+68
+195
+217
+
+
+// Ottawa
+
+Ottawa
+7
+71
+25
+34
+12
+62
+191
+243
+
+
+// Detroit
+
+Detroit
+8
+71
+17
+49
+5
+39
+145
+267

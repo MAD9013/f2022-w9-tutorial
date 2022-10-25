@@ -19,6 +19,9 @@ text-size-adjust: 100%;
 
 body {
   margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 /* - - - - - - - - - - Typogrophy - - - - - - - - - - */
@@ -39,7 +42,7 @@ h1 {
 
 h2,
 h1 + .subtitle {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
 }
 
 h1 + .subtitle {
@@ -63,16 +66,17 @@ a:hover, a:focus {
 
 .btn {
   background-color: #00673e;
-  border: 1px solid #017949;
-  box-shadow: 0 3px 5px #0004;
+  border: 0.0625rem solid #017949;
+  box-shadow: 0 0.25rem 0.5rem #0004;
   color: #fff;
   padding: .75em 1.25em;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   display: inline-block;
   cursor: pointer;
+  text-align: center;
   transition:
     color .2s,
     background-color .2s,
@@ -91,11 +95,6 @@ a:hover, a:focus {
 /* 
 I like to create a collection of reusable classes that help me create consistent layout and spacing on my webpages.
 */
-
-main {
-  min-height: calc(100vh - 122px); /* This will expand the size of <main> to push the footer to the bottom on pages with little content */
-  padding-top: 63px; /* This padding compensates for the fixed navbar not taking up any space to avoid overlap */
-}
 
 .container {
   max-width: 70em;
@@ -206,9 +205,8 @@ section > .container {
 .masthead {
   padding: 1rem 0;
   background-color: #00673e;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 10000;
 }
@@ -249,7 +247,7 @@ section > .container {
   right: -66.6666%;
   width: 66.6666vw;
   height: 100vh;
-  box-shadow: -2px 3px 5px rgba(0, 0, 0, .15);
+  box-shadow: -2px 0.25rem 0.5rem rgba(0, 0, 0, .15);
   background-color: #00462a;
   transition:
     right .2s,
@@ -330,7 +328,7 @@ section > .container {
   color: #00673e;
   border: 2px solid #00673e;
   background-color: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .15);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, .15);
   border-radius: .5rem;
   text-decoration: none;
 }
@@ -391,10 +389,10 @@ section > .container {
   padding: 1rem;
   background-color: #2c8Bd9;
   color: #fff;
-  border: 1px solid #1a5c93;
+  border: 0.0625rem solid #1a5c93;
   display: inline-block;
   border-radius: .75rem .75rem .75rem .125rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .15);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, .15);
   max-width: 30rem;
 }
 
@@ -484,7 +482,7 @@ section > .container {
 
 code {
   background-color: #00000022;
-  border: 1px solid #00000044;
+  border: 0.0625rem solid #00000044;
   padding: .25rem;
   border-radius: .25rem;
 }
@@ -501,7 +499,7 @@ code {
   color: #00673e;
   border: 2px solid #00673e;
   background-color: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, .15);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, .15);
   border-radius: .5rem;
   text-decoration: none;
   color: #000;

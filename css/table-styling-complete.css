@@ -18,7 +18,7 @@ table {
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   text-align: left;
 }
 
@@ -51,7 +51,7 @@ table {
 
 .standings th,
 .standings td {
-  padding: .5rem;
+  padding: 0.5rem;
   border: 0.0625rem solid #e2e2e2;
 }
 
@@ -64,135 +64,7 @@ table {
 }
 
 @media only screen and (min-width: 38em) {
-
   .standings caption {
     text-align: center;
   }
-
-}
-
-/* - - - - - - - - - - Calendar - - - - - - - - - - */
-
-.calendar {
-  display: grid;
-  gap: .5rem;
-}
-
-.calendar caption {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.calendar thead,
-.calendar tbody,
-.calendar tr {
-  display: contents;
-}
-
-.calendar thead th {
-  display: none;
-}
-
-.calendar tbody td {
-  padding: .5rem;
-  background-color: #f2f2f2;
-  border: 0.0625rem solid #ddd;
-  border-radius: .25rem;
-  box-shadow: 0 0.25rem 0.5rem #0001;
-}
-
-.calendar tbody td:first-child,
-.calendar tbody td:nth-child(7) {
-  background-color: #e2f2e2;
-  border-color: #d0ddd0;
-}
-
-.calendar tbody td > time {
-  font-weight: 600;
-}
-
-.calendar tbody td > time::before {
-  content: 'Nov '
-}
-
-.calendar .cal-item {
-  margin: 0;
-  padding: .5rem;
-  border: 0.0625rem solid;
-  border-radius: .25rem;
-  margin-top: .25rem;
-  color: #fff;
-}
-
-.calendar .cal-item.class {
-  background-color: #00673e;
-  border-color: #00462a;
-}
-
-.calendar .cal-item.class.sec-2 {
-  background-color: #6300c7;
-  border-color: #4e009b;
-}
-
-.calendar .cal-item.event {
-  background-color: #004067;
-  border-color: #00273f;
-}
-
-.calendar .cal-item.appointment {
-  background-color: #5e0067;
-  border-color: #3f0045;
-}
-
-.calendar .cal-item.holiday {
-  background-color: #930303;
-  border-color: #710101;
-}
-
-
-@media only screen and (min-width: 50em) {
-
-  .calendar {
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto auto repeat(5, minmax(7.5rem, auto));
-    font-size: .75rem;
-  }
-
-  .calendar caption {
-    grid-column: span 7;
-  }
-
-  .calendar thead th {
-    display: block;
-    color: #fff;
-    background-color: #00673e;
-    border: 0.0625rem solid #00462a;
-    border-radius: .25rem;
-    box-shadow: 0 0.25rem 0.5rem #0001;
-    padding: .5rem;
-  }
-
-  .calendar thead th:first-child,
-  .calendar thead th:last-child {
-    background-color: #00462a;
-    border-color: #00321e;
-  }
-
-  /* .calendar tbody td {
-    min-height: 5rem;
-  } */
-
-  .calendar tbody td > time::before {
-    content: '';
-    display: none;
-  }
-
-}
-
-@media only screen and (min-width: 90em) {
-
-  .calendar {
-    font-size: 1rem;
-  }
-
 }
